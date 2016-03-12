@@ -1,0 +1,85 @@
+---
+title: "Obtención de los datos de un usuario de Twitter a partir de su nombre de usuario"
+output: html_document
+---
+
+## Objetivos
+
+Twitter contiene multitud de datos sobre usuarios y las conexiones entre ellos que pueden servir para análisis estadísticos posteriores. En esta tarea, se plantea generar una función que consiga todos los datos de un usuario determinado de Tweeter. El formato de tanto el input como el output de la función estará definido estrictamente de manera que en tareas posteriores se pueda utilizar sin problemas.
+
+## Paquetes sugeridos
+
+* twitteR.
+* rjason.
+
+## Requerimientos de la función
+
+### Requerimientos del input
+
+La función implementada aceptará tres argumentos:
+
+* `user_name`: un caracter con el id o el nombre del usuario del cual obtener los datos.
+* `n_followers` (opcional): entero indicando el número de followers de `user_name` a devolver por la función. Por defecto, 50.
+* `n_follows` (opcional): entero indicando el número de usuarios seguidos por `user_name` a devolver por la función. Por defecto, 50.
+
+### Requerimientos del output
+
+La función devolverá un string con formato JSON con los datos del usuario. Los atributos del objeto de JSON serán:
+
+* nombre: caracter con el nombre del usuario.
+* nombre_pantalla: caracter con el nombre en pantalla del usuario.
+* id: id entero del usuario.
+* descripcion: caracter con la descripción introducida por el usuario.
+* n_tweets: entero con el número de tweets posteados por el usuario.
+* n_followers: entero indicando el número de followers del usuario.
+* n_favorites: entero con número de veces que el usuario ha marcado un tweet como favorito.
+* n_follows: entero indicando el número de usuarios que éste sigue.
+* url: caracter con la página web proporcionada por el usuario.
+* fecha: caracter con la fecha en que se creo la cuenta. El formato es 
+* protegido: lógico indicando si la cuenta del usuario está protegida.
+* verificado: lógico indicando si es un usuario verificado.
+* localizacion: caracter con la localización proporcionada por el usuario.
+* n_lists: entero con el número de listas en que aparece el usuario.
+* imagen_perfil: caracter con el url a la imagen proporcionada por el usuario.
+* follower\_ids: vector de caracteres con los ids de los usuarios que siguen a este usuario. Este número será igual o menor al valor proporcionado por el argumento `n_followers`.
+* follows\_ids: vector de caracteres con los ids de los usuarios seguidos por este usuario. Este número será igual o menor al valor proporcionado por el argumento `n_followers`.
+
+## Datos a generar
+
+Se deberá de generar un archivo de texto en formato .JSON conteniendo los datos de los siguientes usuarios:
+
+* UPCTnoticias.
+* ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+---
+title: "enunciado"
+output: html_document
+---
+
+## Objetivos
+
+En esta tarea se divide en dos partes. En primer lugar, se implementará la función básica para el minado de los datos de Twitter. A continuación, se generarán una serie de archivos de textos utilizando esta función. 
+
+Los resultados de esta práctica se usarán extensivamente en el resto, por lo que el formato de tanto el input de la función como el output generado estará muy restringido.
+
+## Paquetes recomendados
+
+Se recomienda para esta práctica utilizar los paquetes:
+
+* twitteR
+* dplyr
+
+## Requerimientos de la función implementada
+
+### Requerimientos del input
+
+La función implementada tendrá 3 argumentos de entrada:
+
+* `search_str`: Un caracter con el valor a enviar a la API de Twitter para la busqueda de los Tweets. El string deberá seguir las normas dictadas en [dev.twitter.com/rest/public/search](https://dev.twitter.com/rest/public/search).
+* `n_tweets`: Entero indicando el número de tweets a buscar por la función.
+* `lang` (opcional): Caracter indicando el idioma. Por defecto, los tweets se buscarán en español.
+* `desde` (opcional): Character restringiendo los tweets anteriores a una fecha. Tendrá el formato DD-MM-AAAA.
+* `hasta` (opcional): Character restringiendo los tweets posteriores a una fecha. Tendrá el formato DD-MM-AAAA.
+
+## Requerimientos del ouptut
+
+La función devolverá un data frame, en que cada columna correponde a un tweet, con las siguientes columnas (en este orden):  
+
+* texto: El texto del tweet.
+* id: ID de este tweet.
+* nombre: Nombre del usuario que posteo el tweet.
+* fecha: fecha en que se posteo el tweet.
+* respuestaA: Si es una respuesta a otro usuario, nombre del usuario. NA si no.
+* respuestaAid: Si es una respuesta a otro usuario, ID del usuario. NA si no.
+* favorito: TRUE si este tweet ha sido marcado como favorito.
+* n_favorito: Número de veces que este tweet ha sido marcado como favorito.
+* retweeteado: TRUE si este tweet ha sido retuiteado.
+* n_retweet: Número de veces que este tweet ha sido retuiteado.
+* es_retweet: TRUE si es un retweet.
+* fuente: Fuente desde la que se envió el estatus.
+* longitud: Longitud geográfica desde la que se envió el tweet.
+* latitud: Latitud geográfica desde la que se envió el tweet.
+
+## Archivos de texto a generar
+
+Utilizando la función implementada se generaran una serie de archivos de texto con formato textual conteniendo los datos obtenidos.
+
+* Los nombres de las columnas de este archivo serán idénticos a los del data frame devuelto por la función. 
+* Las columnas se separarán por medio de tabulaciones.
+* Las filas NO estarán numeradas.
+* Las comillas dentro de las celdas serán codificadas usando el método "double" (ver ayuda de `write.table`).
+
+Se deberá generar:
+
+* Los tweets relacionados con `UPCT` entre el XX y el YY.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
