@@ -1,0 +1,10 @@
+---
+title: "Generación de una nube de palabras a partir de tweets"
+output: html_document
+---
+
+## Trabajo a realizar
+
+Una nube de palabras es un gráfico en el que se muestran las palabras más utilizadas en un documento o un conjunto de documentos, proporcionando una primera idea sobre su contenido.
+
+En esta tarea se utilizará 
