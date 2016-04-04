@@ -49,7 +49,12 @@ La función devolverá un string con formato JSON con los datos del usuario. Los
 Se deberá de generar un archivo de texto en formato .JSON conteniendo los datos de los siguientes usuarios:
 
 * UPCTnoticias.
-* ...
+* universidadupct.
+* estudiantesupct.
+* IngMinasUpct.
+
+En la carpeta ./ejemplo-output/ hay ejemplos de cómo debe de ser el output generado.
+
 
 
 
