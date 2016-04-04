@@ -58,7 +58,10 @@ Utilizando la función implementada se generaran una serie de archivos de texto 
 
 Se deberá generar:
 
-* Los tweets relacionados con `UPCT` entre el XX y el YY.
+* Los tweets conteniendo el hashtag `#UPCT` entre el 16 de Enero y el 20 de Febrero de 2016.
+* Los tweets relacionados con el string `upct` entre el 15 de Septiembre y el 15 de Noviembre de 2015.
+* Los tweets conteniendo el hastag `#ElClasico` entre el 30 de Mayo y el 5 de Abril de 2016.
+
 
 
 
