@@ -1,0 +1,79 @@
+---
+title: "Analisis de sentimientos usando regresion logistica"
+output: html_document
+---
+
+## Objetivo
+
+En esta practica se entrenará un algoritmo de análisis de sentimientos basado en regresión logística. Se utilizará para el entrenamiento una serie de tweets que yaa han sido clasificados como positivos o negativos.
+
+## Paquetes sugeridos
+
+* Funciones para regresión logística implementadas en clase.
+
+## Fundamento teorico
+
+La *Term-Document matrix* se define como la matriz cuyas filas indican qué palabras aparecen en un documento y cuántas veces. Por ejemplo, para las frases:
+
+> Me encanta esta asignatura.  
+> Pues yo odio esta asignatura.
+
+La matriz toma la forma:
+
+```{r, echo=FALSE}
+library(knitr)
+out <- data.frame(me = c(1,0),
+                  encanta = c(1, 0),
+                  esta = c(1,1),
+                  asignatura = c(1,1),
+                  pues = c(0,1),
+                  yo = c(0, 1),
+                  odio = c(0,1))
+kable(out)
+```
+
+El objetivo de esta práctica es utilizar regresión logística para predecir el "ánimo" con el que se ha escrito un tweet. Los regresores serán el número de veces que aparece cada palabra.
+
+Para el ejemplo anterior, el modelo toma la forma
+
+$$
+animo = \theta_1 \cdot me + \theta_2 \cdot encanta + ...
+$$
+
+donde $\theta_i$ son los coeficientes del modelo a determinar. 
+
+El algoritmo se entrenará utilizando el archivo *tweets_sentiment.csv* subido al aula virtual. Este archivo sigue el mismo formato al expuesto en la práctica de recopilacion de tweets, con la adición de la columna *animo*. Si el tweet es positivo, esta columna toma el valor $1$. Si es negativo, esta columna toma el valor $0$.
+
+## Procedimiento
+
+1. Dividir el set de datos en training (60%) y test (40%).
+2. Entrenar el algoritmo de regresion utilizando el set de training.
+3. Comparar las predicciones del algoritmo utilizando el set de test.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
