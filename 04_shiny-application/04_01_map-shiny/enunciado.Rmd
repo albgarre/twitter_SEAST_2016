@@ -1,0 +1,35 @@
+---
+title: "Localizacion de usuarios en shiny"
+output: html_document
+---
+
+## Objetivos
+
+El objetivo de este ejercicio es integrar en una aplicación de Shiny el ejercicio que se hizo en clase el lunes 2 de Mayo.
+
+Es decir, la aplicacion cargará los datos de una serie de usuarios en formato .json y generará un mapa mostrando su localizacion.
+
+## Paquetes recomendados
+
+* shiny (para leaflet se debe usar `leafletOutput` y `renderLeaflet`)
+* leaflet
+
+## Requerimientos de la aplicación
+
+La aplicacion utilizará un sidebar layout.
+
+El panel lateral contendrá un boton que permitirá subir un archivo de tipo .json.
+
+El panel principal contendrá a su vez un *tabsetPanel*. Éste tendrá dos pestañas diferentes.
+
+La primera, mostrará los tweets subidos en forma tabular.
+
+La segunda, mostrará el mapa.
+
+
+
+
+
+
+
+

@@ -62,6 +62,8 @@ Se deberá generar:
 * Los tweets relacionados con el string `upct` entre el 15 de Septiembre y el 15 de Noviembre de 2015.
 * Los tweets conteniendo el hastag `#ElClasico` entre el 30 de Mayo y el 5 de Abril de 2016.
 
+En la carpeta ./ejemplo-output/ hay ejemplos del formato que deben de tener los archivos de salida.
+
 
 
 
